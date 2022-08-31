@@ -1,0 +1,192 @@
+<div >
+    
+    <div class="wrapper" style="background: linear-gradient(gray, white);" >
+        <div class="section">
+            <div class="top_navbar" style="margin-left:5.5% ;
+            background-image:url('https://t3.ftcdn.net/jpg/03/24/93/38/360_F_324933831_RkeWmwoniRJqZmobflsSQvIYpvS3hUny.jpg')">
+                <br>
+                <br>
+                <br>
+                <h1 style="color: white; ">
+                   ---------------------------------------- PROGRAM SYLLABUS-------------------------
+                </h1>
+                <br>
+                <br>
+                <br>
+                
+            </div>
+
+        </div>
+    <div class="wrapper" >
+        
+        <!--Top menu -->
+        <div class="sidebar" style="background-color: #33363a; ">
+            
+            <ul>
+                <li>
+                    <a routerLink="" class="active">
+                        <span class="icon" style="font-size:14px;"><i class="fa fa-home fa-2x"></i>Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a routerLink="/">
+                        <span class="icon" style="font-size:14px;"><i class="fa fa-laptop fa-2x"></i>Catalog</span>
+                    </a>
+                </li>
+                <li>
+                    
+                        <span class="icon" style="font-size:14px;"><i ></i><br><br></span>
+                </li>
+                <li>
+                    
+                        <span class="icon" style="font-size:14px;"><i ></i><br><br></span>
+                    
+                </li>
+                <li>
+                    
+                        <span class="icon" style="font-size:14px;"><i ></i><br><br></span>
+                    
+                </li>
+                <li>
+                    
+                    <span class="icon" style="font-size:14px;"><i ></i><br><br></span>
+                
+            </li>
+            <li>
+                
+                    <span class="icon" style="font-size:14px;"><i ></i><br><br></span>
+                
+            </li>
+            <li>
+                
+                    <span class="icon" style="font-size:14px;"><i ></i><br><br></span>
+                
+            </li>
+            
+        
+        <li>
+            
+                <span class="icon" style="font-size:14px;"><i ></i><br><br></span>
+            
+        </li>
+               
+                <li>
+                    <a routerLink="/settings">
+                        <span class="icon" style="font-size:14px;" ><i class="fa fa-cogs fa-2x"></i>Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a routerLink="/login">
+                        <span class="icon" style="font-size:14px;"><i class="fa fa-power-off fa-2x"></i>Logout</span>
+                        
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+            <!--profile image & text-->
+            <!--<div class="form__container" style="margin-left:22%; background-color:linear-gradient(black, white)">
+                <div class="title__container ">
+                    <h1 style="color: black; font-size: 50px; ">Core Curriculum</h1>
+                   
+                </div>
+                <div class="body__container">
+                    
+                    <div class="right__container">
+                        <ul class="StepProgress">
+                            <li class="StepProgress-item current">
+                                <h6><strong>PART 1</strong></h6>
+                                <h2><a routerLink="/part" style="color:black ;">Welcome to the AWS Cloud Architect Nanodegree program</a></h2></li>
+                                <li class="StepProgress-item current">
+                                    <h6><strong>PART 2</strong></h6>
+                                    <h2><a routerLink="/part" style="color:black ;">Design for Availability, Reliability, and Resiliency</a> </h2></li>
+                                <li class="StepProgress-item current">
+                                    <h6><strong>PART 3</strong></h6>
+                                    <h2><a routerLink="/part" style="color:black ;">Design for Performance and Scalability</a></h2>
+                                    <p>In this course, you will use AWS tools to identify and implement best practices for cost and identify and understand the elements required to design and architect scalable infrastructure. You will be able to modify traditional infrastructure for performance and identify architectures and workloads where serverless infrastructure should be considered to meet cost and performance goals. Finally, you will be able to provision and destroy infrastructure from the command line using the AWS CLI and Terraform.</p>
+                                </li>
+                                <li class="StepProgress-item current">
+                                    <h6><strong>PART 4</strong></h6>
+                                    <h2><a routerLink="/part" style="color:black ;">Design for Security</a></h2></li>
+                            
+                          </ul>
+                    </div>
+                </div>
+            </div>-->
+           
+            <div class="main-container" style="margin-left:22% ;">
+              
+              
+                <!-- <div class="cards">
+                
+                  <div class="conteneur">
+                    <div class="card  flex">
+                        <div class="right__container">
+                     
+                            <ul class="StepProgress">
+                               
+                                <li class="StepProgress-item current"  *ngFor="let x of parts; let i = index" [attr.data-index]="i" >
+                                    <h6><strong>PART </strong></h6>
+                                    <h2><a [routerLink]="['/part', x]" style="color:black ;"  >{{x}}</a></h2></li>
+                                 
+                                   
+                            </ul>
+                                        
+                        </div>
+                    </div>
+                   
+  
+                  </div> -->
+            
+            <!--menu item-->
+            <router-outlet></router-outlet>
+        </div>
+
+    </div>
+    
+    <!-- navbar2 -->
+    
+    <div class="sidenav"  style="margin-left:7%">
+    
+    <div style="background-image:url('https://img.favpng.com/1/6/23/grey-polygon-desktop-wallpaper-wallpaper-png-favpng-7M2rAXHUKfaSg6GE2cgp9BwA9.jpg')">
+                <br>
+                <br>
+                <br>
+                <a [routerLink]="['/formation']" ><h4 align="center" style="color:white; ">{{lesson}}</h4></a>
+                <br>
+                <br>
+                <br>
+            </div>
+    <a routerLink="/part" style="color:white" >SYLLABUS</a>
+
+    
+
+    <div class="wrap-collabsible dropdown-btn"> 
+        <input id="collapsible2" class="toggle" type="checkbox" checked="">
+        
+             <label for="collapsible2" class="lbl-toggle">CORE CURRICULUM <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16">
+                <path d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z"/>
+              </svg>
+                
+             </label>
+             <div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">
+            <div class="content-inner"  *ngFor="let x of chapitres; let i = index" [attr.data-index]="i" > 
+             <a  [routerLink]="['cours', x]"><span style="font-size:16px; "  >{{x}} </span></a>
+
+<!--              
+                <div class="content-inner" >
+                
+                <a href="#"><span style="font-size:16px; " >1.Welcome to the AWS Cloud Architect</span></a>
+                <a href="#"><span style="font-size:16px; " >2.Design for Availability, Reliability, and </span></a>
+                <a href="#"><span style="font-size:16px; " >3.Design for Performance and </span></a>
+                <a href="#"><span style="font-size:16px; " >4.Design for Security</span></a> -->
+            </div>
+        </div>
+    </div>
+       
+   
+    </div>
+
+    
+   
+

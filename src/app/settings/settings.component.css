@@ -1,0 +1,29 @@
+.tb{
+    display: flex;
+}
+.tb1{
+    margin-left: 40px;
+    margin-right: 100px;
+
+}
+.header-image {
+    background-size: cover;
+    height: 80px;
+    width: 100px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+.card {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 2%;
+    height: 100%;
+}
+
+.main-div {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}

@@ -1,0 +1,145 @@
+<div style="background:linear-gradient(rgb(88, 155, 151),#afa9a9);">
+    <div class="wrapper" >
+        <div class="section">
+            <div class="top_navbar" style="margin-right:25% ;
+            background-image:url('https://t3.ftcdn.net/jpg/03/24/93/38/360_F_324933831_RkeWmwoniRJqZmobflsSQvIYpvS3hUny.jpg')">
+                <br>
+                <br>
+                <br>
+                <h1 style="color: white;">
+                    {{part}}
+                </h1>
+                <br>
+                <br>
+                <br>
+                
+            </div>
+
+        </div>
+    <div class="wrapper">
+        
+        <!--Top menu -->
+        <div class="sidebar" style="background-color: #33363a;">
+            
+            <ul>
+                <li>
+                    <a routerLink="" class="active">
+                        <span class="icon" style="font-size:14px;"><i class="fa fa-home fa-2x"></i>Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a routerLink="/catalogue">
+                        <span class="icon" style="font-size:14px;"><i class="fa fa-laptop fa-2x"></i>Catalog</span>
+                    </a>
+                </li>
+                <li>
+                    
+                        <span class="icon" style="font-size:14px;"><i ></i><br><br></span>
+                </li>
+                <li>
+                    
+                        <span class="icon" style="font-size:14px;"><i ></i><br><br></span>
+                    
+                </li>
+                <li>
+                    
+                        <span class="icon" style="font-size:14px;"><i ></i><br><br></span>
+                    
+                </li>
+                <li>
+                    
+                    <span class="icon" style="font-size:14px;"><i ></i><br><br></span>
+                
+            </li>
+            <li>
+                
+                    <span class="icon" style="font-size:14px;"><i ></i><br><br></span>
+                
+            </li>
+            <li>
+                
+                    <span class="icon" style="font-size:14px;"><i ></i><br><br></span>
+                
+            </li>
+            
+        
+        <li>
+            
+                <span class="icon" style="font-size:14px;"><i ></i><br><br></span>
+            
+        </li>
+                
+                <li>
+                    <a routerLink="/settings">
+                        <span class="icon" style="font-size:14px;" ><i class="fa fa-cogs fa-2x"></i>Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/login">
+                        <span class="icon" style="font-size:14px;"><i class="fa fa-power-off fa-2x"></i>Logout</span>
+                        
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+            <!--profile image & text-->
+                    <div class="card " style="margin-left:13%;" *ngFor="let item of lessons; let i = index" [attr.data-index]="i">
+                        <a [routerLink]="['/chapitre',item]">
+                            <div class="additional" >
+                            <div class="user-card" >
+                                <div class="level center">
+                                Lesson {{i+1}}
+                                </div>
+                          
+                            
+                        </div>
+                        <div class="more-info">
+                            <h1>{{item}}</h1>
+
+                        </div>
+                        </div></a>  
+                      
+                    </div>
+                    
+               
+        </div>
+
+    </div>
+    
+    <!-- navbar2 -->
+    
+    <div class="sidenav"  style="margin-left:7%">
+    
+    <div style="background-image:url('https://img.favpng.com/1/6/23/grey-polygon-desktop-wallpaper-wallpaper-png-favpng-7M2rAXHUKfaSg6GE2cgp9BwA9.jpg')">
+                <br>
+                <br>
+                <br>
+                <h4 align="center" style="color:white; ">{{form5}}</h4>
+                <br>
+                <br>
+                <br>
+            </div>
+    <a routerLink="/part">SYLLABUS</a>
+
+    <div class="wrap-collabsible dropdown-btn"> 
+        <input id="collapsible2" class="toggle" type="checkbox" checked="">
+        
+             <label for="collapsible2" class="lbl-toggle">CORE CURRICULUM <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16">
+                <path d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z"/>
+              </svg>
+                
+             </label>
+        <!-- <div class="collapsible-content" >
+            <div class="content-inner" *ngFor="let x of partss; let i = index" [attr.data-index]="i">
+                <a  [routerLink]="['/part', x]"><span style="font-size:16px; " >{{x}}</span></a>
+            
+            </div>
+        </div> -->
+    </div>
+
+   
+
+    </div>
+</div>
+
